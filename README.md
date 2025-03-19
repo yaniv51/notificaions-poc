@@ -61,9 +61,7 @@ curl "http://localhost:5000/generate-notifications?type=EMAIL&amount=10"
 
 - Supports two types of notifications: Email and Web Push
 - Priority handling (High/Low) using Kafka partitions
-- Rate limiting:
-  - Email: 5 messages per second
-  - Push: 20 messages per second
+
 - Random notification generation with 80% low priority and 20% high priority
 - High priority messages are sent to partitions 4+5, low priority to 0-3
 
